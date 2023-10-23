@@ -1,3 +1,11 @@
-const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
-
-// Code your solution here
+const batteryBatches = [
+    { id: 1, amount: 20 },
+    { id: 2, amount: 10 },
+    { id: 3, amount: 1 }
+  ];
+  
+  const totalBatteries = batteryBatches.reduce((accumulator, currentElement) => {
+    return accumulator + currentElement.amount;
+  }, 0);
+  
+  console.log(totalBatteries);
